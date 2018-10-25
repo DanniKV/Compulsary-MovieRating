@@ -9,13 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{CF00D482-3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{68543786-DBDB-4494-A54F-1C46BA045C83}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{FC40538A-7C9E-4569-9993-D6CBD38DA999}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compulsary-MovieRating.Infrastructure", "Compulsary-MovieRating.Infrastructure\Compulsary-MovieRating.Infrastructure.csproj", "{A61FA472-ADB5-484C-B6ED-37D6ABF7FB37}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTest-Compulsary-MovieRating", "XUnitTest-Compulsary-MovieRating\XUnitTest-Compulsary-MovieRating.csproj", "{859A7EA7-D8FF-4D1F-AA54-B1ACAD3FBF42}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRating.Core.Entity", "MovieRating.Core.Entity\MovieRating.Core.Entity.csproj", "{19C861CD-777B-407E-9F2A-CFB815BB322F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JsonFileReader", "JsonFileReader", "{CB742A7F-8625-4E31-934A-6006A7A5AE1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileReader", "FileReader\FileReader.csproj", "{B50DDA3A-4C11-4408-879F-1D5E7D9A053A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{19C861CD-777B-407E-9F2A-CFB815BB322F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19C861CD-777B-407E-9F2A-CFB815BB322F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19C861CD-777B-407E-9F2A-CFB815BB322F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B50DDA3A-4C11-4408-879F-1D5E7D9A053A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50DDA3A-4C11-4408-879F-1D5E7D9A053A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B50DDA3A-4C11-4408-879F-1D5E7D9A053A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B50DDA3A-4C11-4408-879F-1D5E7D9A053A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{2EBBF8D3-3C33-46E5-8A0D-EA9463D6FDE5} = {CF00D482-3924-48AC-9495-6674280FA8E1}
 		{A61FA472-ADB5-484C-B6ED-37D6ABF7FB37} = {68543786-DBDB-4494-A54F-1C46BA045C83}
 		{19C861CD-777B-407E-9F2A-CFB815BB322F} = {CF00D482-3924-48AC-9495-6674280FA8E1}
+		{B50DDA3A-4C11-4408-879F-1D5E7D9A053A} = {CB742A7F-8625-4E31-934A-6006A7A5AE1B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F0C24ED3-70D1-48B9-A4C2-F1657448D8BF}

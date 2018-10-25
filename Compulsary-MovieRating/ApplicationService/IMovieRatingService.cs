@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Compulsary_MovieRating.ApplicationService
 {
-    class IMovieRatingService
+    public interface IMovieRatingService
     {
+
     }
 }
