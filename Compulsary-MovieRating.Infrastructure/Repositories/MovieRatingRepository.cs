@@ -7,6 +7,8 @@ namespace Compulsary_MovieRating.Infrastructure.Repositories
 {
     public class MovieRatingRepository: IMovieRatingRepository
     {
+        //Read Data
+
 
     }
 }
