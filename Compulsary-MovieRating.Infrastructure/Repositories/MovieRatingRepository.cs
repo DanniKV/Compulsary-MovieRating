@@ -5,7 +5,8 @@ using System.Text;
 
 namespace Compulsary_MovieRating.Infrastructure.Repositories
 {
-    public class MovieRatingRepository: IMovieRatingRepository
+                            //remove "//" when interface is ready
+    public class MovieRatingRepository//: IMovieRatingRepository
     {
         //Read Data
 

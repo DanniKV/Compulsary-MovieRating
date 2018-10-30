@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Compulsary_MovieRating.DomainService;
 using MovieRating.Core.Entity;
 
 namespace Compulsary_MovieRating.ApplicationService.Services
@@ -8,6 +9,14 @@ namespace Compulsary_MovieRating.ApplicationService.Services
     public class MovieRatingService : IMovieRatingService
     {
         //Stuff needs to be implemented from TDD
+
+        //Dep injection
+        readonly IMovieRatingRepository _movieRepo;
+
+        public MovieRatingService(IMovieRatingRepository movieRatingRepository)
+        {
+            _movieRepo = movieRatingRepository;
+        }
 
 
         public MovieRatings getAverageRateFromMovie(int MovieId)
