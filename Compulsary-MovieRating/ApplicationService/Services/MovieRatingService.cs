@@ -18,59 +18,84 @@ namespace Compulsary_MovieRating.ApplicationService.Services
             _movieRepo = movieRatingRepository;
         }
 
-
-        public MovieRatings getAverageRateFromMovie(int MovieId)
+        //1
+        public MovieRatings getNumberOfReviewsFromReviewer(int Reviewer)
         {
+            //for each movie rating X appears count up
             throw new NotImplementedException();
         }
 
-        public MovieRatings getAverageReviewsFromReviewer(int ReviewerId)
+        //2
+        public MovieRatings getAverageReviewsFromReviewer(int Reviewer)
         {
+            //for each movierating by int reviewer add them all
+            //then divide by number for average
             throw new NotImplementedException();
         }
 
-        public MovieRatings getMovieGradeFromReviewerAndMovie(int ReviewerId, int MovieId)
+        //3
+        public MovieRatings getMovieGradeFromReviewerAndMovie(int Reviewer, int Movie)
         {
+            //get grade from movierating when Reviewer(x) & Movie(y) matches
             throw new NotImplementedException();
         }
 
+        //4
+        public MovieRatings getNumberOfReviewsFromMovie(int Movie)
+        {
+            //count all objects with the int Movie
+            throw new NotImplementedException();
+        }
+
+        //5
+        public MovieRatings getAverageRateFromMovie(int Movie)
+        {
+            //get all objects with matching int movie and calculate average grade
+            throw new NotImplementedException();
+        }
+
+        //6
+        public MovieRatings getNumberOfGradingFromMovieAndGrade(int Movie, int Grade)
+        {
+            //On two inputs, see how many times Movie (X) has recieved grade (Y)
+            throw new NotImplementedException();
+        }
+
+        //7
         public MovieRatings getMovieIdFromHighestGradedMovies(int Grade)
         {
+            //Find which movie has the most "5 star ratings"
             throw new NotImplementedException();
         }
 
-        public MovieRatings getNumberOfGradingFromMovieAndGrade(int MovieId, int Grade)
+
+        //8
+        public MovieRatings getReviewerWithMostReviews(int Reviewer)
         {
+            //Find the int Reviewer that appears the most
             throw new NotImplementedException();
         }
 
-        public MovieRatings getNumberOfReviewsFromMovie(int MovieId)
+        //9
+        public MovieRatings getTopNMovies(int N)
         {
+            //get top X amount of movies - Calculated by everythings average
             throw new NotImplementedException();
         }
-
-        public MovieRatings getNumberOfReviewsFromReviewer(int ReviewerId)
+  
+  
+        //10
+        public List<MovieRatings> getSortedMoviesFromReviewer(int Reviewer)
         {
+            //Gets a sorted list by the integer of a reviewer.
+            //It should be sorted by DECREASING GRADE and Date secondly
             throw new NotImplementedException();
         }
-
-        public List<MovieRatings> getReviewersSortedFromMovies()
+  
+        //11
+        public List<MovieRatings> getReviewersSortedFromMovies(int Movie)
         {
-            throw new NotImplementedException();
-        }
-
-        public MovieRatings getReviewerWithMostReviews()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<MovieRatings> getSortedMoviesFromReviewer()
-        {
-            throw new NotImplementedException();
-        }
-
-        public MovieRatings whatIsTheMeaningOfThis()
-        {
+            //Same as 10 but with Movies as the search parameter.
             throw new NotImplementedException();
         }
     }
