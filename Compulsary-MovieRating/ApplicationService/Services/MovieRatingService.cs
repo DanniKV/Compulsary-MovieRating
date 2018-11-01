@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Compulsary_MovieRating.DomainService;
 using MovieRating.Core.Entity;
+using Newtonsoft.Json;
 
 namespace Compulsary_MovieRating.ApplicationService.Services
 {
@@ -18,9 +19,12 @@ namespace Compulsary_MovieRating.ApplicationService.Services
             _movieRepo = movieRatingRepository;
         }
 
+        private JsonReader _jsonReader;
+
         //1
         public MovieRatings GetNumberOfReviewsFromReviewer(int Reviewer)
         {
+            
             //for each movie rating X appears count up
             throw new NotImplementedException();
         }

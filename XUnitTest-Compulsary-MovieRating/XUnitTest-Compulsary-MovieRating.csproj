@@ -15,7 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Compulsary-MovieRating.Infrastructure\Compulsary-MovieRating.Infrastructure.csproj" />
     <ProjectReference Include="..\Compulsary-MovieRating\Compulsary-MovieRating.Core.csproj" />
+    <ProjectReference Include="..\FileReader\FileReader.csproj" />
+    <ProjectReference Include="..\MovieRating.Core.Entity\MovieRating.Core.Entity.csproj" />
   </ItemGroup>
 
 </Project>

@@ -7,13 +7,20 @@ using System.IO;
 
 namespace FileReader
 {
-    public class JsonReader
+    public class JsonReadClass
     {
-        private const string FILE_NAME = "ratings.json";  // Change the path
 
-        static void Main(string[] args)
+
+        public List<MovieRatings> ratings = new List<MovieRatings>();
+
+        public JsonReadClass(string FILE_NAME)
         {
-            List<MovieRatings> ratings = new List<MovieRatings>();
+            JsonReader(FILE_NAME);
+        }
+
+        public void JsonReader(string FILE_NAME)
+        {
+
 
             Console.Write("Converting Json file to objects... ");
 
@@ -41,30 +48,31 @@ namespace FileReader
             }
 
             sw.Stop();
-            Console.WriteLine("Done. Time = {0:f4} sec.", sw.ElapsedMilliseconds / 1000d);
+            //Console.WriteLine("Done. Time = {0:f4} sec.", sw.ElapsedMilliseconds / 1000d);
 
-            Dictionary<int, List<MovieRatings>> Reviewers = new Dictionary<int, List<MovieRatings>>();
-            Dictionary<int, List<MovieRatings>> Movies = new Dictionary<int, List<MovieRatings>>();
+            //Dictionary<int, List<MovieRatings>> Reviewers = new Dictionary<int, List<MovieRatings>>();
+            //Dictionary<int, List<MovieRatings>> Movies = new Dictionary<int, List<MovieRatings>>();
 
-            Console.Write("Indexing MovieRatings... ");
-            sw.Restart();
-            foreach (MovieRatings m in ratings)
-            {
-                if (!Reviewers.ContainsKey(m.Reviewer))
-                    Reviewers[m.Reviewer] = new List<MovieRatings>();
-                Reviewers[m.Reviewer].Add(m);
+            //Console.Write("Indexing MovieRatingss... ");
+            //sw.Restart();
+            //foreach (MovieRatings m in ratings)
+            //{
+            //    if (!Reviewers.ContainsKey(m.Reviewer))
+            //        Reviewers[m.Reviewer] = new List<MovieRatings>();
+            //    Reviewers[m.Reviewer].Add(m);
 
-                if (!Movies.ContainsKey(m.Movie))
-                    Movies[m.Movie] = new List<MovieRatings>();
-                Movies[m.Movie].Add(m);
-            }
-            sw.Stop();
-            Console.WriteLine("Done. Time = {0:f4} sec.", sw.ElapsedMilliseconds / 1000d);
+            //    if (!Movies.ContainsKey(m.Movie))
+            //        Movies[m.Movie] = new List<MovieRatings>();
+            //    Movies[m.Movie].Add(m);
+            //}
+            //sw.Stop();
+            //Console.WriteLine("Done. Time = {0:f4} sec.", sw.ElapsedMilliseconds / 1000d);
 
-            foreach (KeyValuePair<int, List<MovieRatings>> kv in Reviewers)
-            {
-                Console.WriteLine("Reviewer: {0,4} has reviewed {1,6} movies.", kv.Key, kv.Value.Count);
-            }
+            //foreach (KeyValuePair<int, List<MovieRatings>> kv in Reviewers)
+            //{
+            //    Console.WriteLine("Reviewer: {0,4} has reviewed {1,6} movies.", kv.Key, kv.Value.Count);
+            //}
+
         }
 
         private static MovieRatings ReadOneMovieRating(JsonTextReader reader)
@@ -84,5 +92,7 @@ namespace FileReader
             }
             return m;
         }
+
     }
 }
+
