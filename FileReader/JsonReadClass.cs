@@ -9,7 +9,7 @@ namespace FileReader
 {
     public class JsonReadClass
     {
-
+        private const string FILE_NAME = "Test Ratings.Json";
 
         public List<MovieRatings> ratings = new List<MovieRatings>();
 

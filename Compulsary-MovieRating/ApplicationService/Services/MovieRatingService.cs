@@ -10,6 +10,8 @@ namespace Compulsary_MovieRating.ApplicationService.Services
 {
     public class MovieRatingService : IMovieRatingService
     {
+        private const string FILE_NAME = "Test Ratings.Json";
+
         //Stuff needs to be implemented from TDD
 
         //Dep injection
@@ -25,9 +27,11 @@ namespace Compulsary_MovieRating.ApplicationService.Services
         //1
         public MovieRatings GetNumberOfReviewsFromReviewer(int Reviewer)
         {
-            
             //for each movie rating X appears count up
+            _jsonReader.JsonReader(FILE_NAME);
+            
             throw new NotImplementedException();
+
         }
 
         //2

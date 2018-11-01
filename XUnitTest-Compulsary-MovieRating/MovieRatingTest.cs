@@ -13,11 +13,11 @@ namespace XUnitTest_Compulsary_MovieRating
         private IMovieRatingService MovieR = new MovieRatingService(new JsonReadClass("Test Ratings.json"));
 
         [Theory]
-        [InlineData] 
-        public void Test1()
+        [InlineData(1, 8)]
+        public void TestGetNumberOfReviewsFromReviewer(int Input, int Result)
         {
 
-
         }
+
     }
 }
