@@ -42,7 +42,7 @@ namespace Compulsary_MovieRating.ApplicationService
 
         /*10. On input N, what are the movies that reviewer N has reviewed? The list should
         be sorted decreasing by rate first, and date secondly. */
-        List<MovieRatings> GetSortedMoviesFromReviewer(int Reviewer;
+        List<MovieRatings> GetSortedMoviesFromReviewer(int Reviewer);
 
         /*11. On input N, what are the reviewers that have reviewed movie N? The list
         should be sorted decreasing by rate first, and date secondly.*/
