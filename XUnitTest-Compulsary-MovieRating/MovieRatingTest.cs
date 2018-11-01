@@ -1,3 +1,4 @@
+using MovieRating.Core.Entity;
 using System;
 using Xunit;
 
@@ -8,6 +9,7 @@ namespace XUnitTest_Compulsary_MovieRating
         [Fact]
         public void Test1()
         {
+            MovieRatings MR = new MovieRatings();
 
         }
     }
