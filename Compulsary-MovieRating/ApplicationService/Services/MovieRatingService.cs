@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Compulsary_MovieRating.DomainService;
+using FileReader;
 using MovieRating.Core.Entity;
 using Newtonsoft.Json;
 
@@ -14,12 +15,12 @@ namespace Compulsary_MovieRating.ApplicationService.Services
         //Dep injection
         readonly IMovieRatingRepository _movieRepo;
 
-        public MovieRatingService(IMovieRatingRepository movieRatingRepository)
-        {
-            _movieRepo = movieRatingRepository;
-        }
+        JsonReadClass _jsonReader;
 
-        private JsonReader _jsonReader;
+        public MovieRatingService(JsonReadClass jsonReader)
+        {
+            _jsonReader = jsonReader;
+        }
 
         //1
         public MovieRatings GetNumberOfReviewsFromReviewer(int Reviewer)
