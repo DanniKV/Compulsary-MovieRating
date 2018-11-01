@@ -1,19 +1,19 @@
-﻿using MovieRating.Core.Entity;
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using MovieRating.Core.Entity;
+using Newtonsoft.Json;
 
-namespace FileReader
+namespace Program
 {
-    public class JsonReadClass
+    public class ReaderClass
     {
-        private const string FILE_NAME = "Test Ratings.Json";
+         private const string FILE_NAME = "Test Ratings.Json";
 
         public List<MovieRatings> ratings = new List<MovieRatings>();
 
-        public JsonReadClass(string FILE_NAME)
+        public ReaderClass(string FILE_NAME)
         {
             JsonReader(FILE_NAME);
         }
@@ -95,4 +95,3 @@ namespace FileReader
 
     }
 }
-
